@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>XcendLabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     /* Basic Reset */
     * {
@@ -197,6 +198,28 @@
 
     .logo:hover {
       transform: scale(1.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+      }
+      .hero p {
+        font-size: 1rem; /* Smaller font size for mobile */
+      }
+      .cta-button {
+        font-size: 1rem; /* Smaller button font size */
+        padding: 0.6rem 1rem; /* Adjust padding */
+      }
+      .service-card {
+        width: 100%; /* Full width on mobile */
+        margin: 0.5rem 0; /* Adjust margin */
+      }
+      nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 0.5rem; /* Adjust gap */
+      }
     }
   </style>
 </head>
